@@ -1,0 +1,25 @@
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+/* variables */
+    :root {
+        --white-color: #FFF;
+        --black-color: #000;
+        --coffee-color: #603809;
+        --cta-color: #1C1C1C;
+        --text-color: #707070;
+        --yellow-color: #F9C06A;
+        --cards-bg-color: #FFF9F1;
+        --cards-stroke-color: #f9c06a66;
+        --background-color: #FFFEFC;
+        --primary-font: "Playfair Display";
+        --secondary-font: "Clicker Script";
+    }
+/* e: variables */
+
+    body{
+        font-family: var(--primary-font), cursive, sans-serif;
+        font-size: 16px;
+    }
