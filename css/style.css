@@ -27,6 +27,7 @@
     body{
         font-family: var(--primary-font), cursive, sans-serif;
         font-size: 16px;
+        background-color: var(--background-color);
     }
 
 /* header */
@@ -40,6 +41,7 @@
         background-repeat: no-repeat;
         position: relative;
         z-index: 1;
+        margin-bottom: 2.5rem;
     }
 
     /* header overlay */
@@ -117,9 +119,13 @@
         font: 500 1.375em var(--primary-font);
         text-align: left;
     }
-    .banner__container .banner__container-subtitle:nth-of-type(2) {
-        font: 1.25em/2.125em var(--primary-font); /* 20px 34px */
-        margin-bottom: 1.25em;
+    .subtitle {
+        font: 1.25rem/2.125rem var(--primary-font); /* 20px 34px */
+        color: var(--text-color);
+    }
+    .banner__container-subtitle.subtitle {
+        color: var(--white-color);
+        margin-bottom: 1.25rem;
     }
 /* e: header */
 
@@ -159,3 +165,43 @@
     padding: 0;
 }
 /* e: buttons */
+
+/* ABOUT US section */
+.section__about-us {
+    max-height: 650px;
+}
+
+#about-us .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5.938rem;
+    position: relative;
+
+}
+.section__about-us .subtitle::after {
+    content: "";
+    background-image: url("../images/coffee_blast.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 498px;
+    height: 272px;
+    left: -180px;
+    bottom: -120px;
+    z-index: -1;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.813rem;
+    padding: 4.25rem 0;
+    margin: 2.5rem 0;
+}
+.section__title {
+    font: 700 3.375rem var(--primary-font);
+    color: var(--coffee-color);
+    margin: 0;
+}
+.column .btn {align-self: flex-start;}
